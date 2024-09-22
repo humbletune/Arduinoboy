@@ -41,7 +41,7 @@ void setMode()
 
  /*
    switchMode is only called from setMode. its responsible for
-   linking the mode number to its corrisponding function, 
+   linking the mode number to its corresponding function, 
    and then calling that function. function. function.
  */
 void switchMode()
@@ -67,6 +67,9 @@ void switchMode()
       modeLSDJMapSetup();
       break;
     case 6:
+      modeChordSetup();
+      break;
+    case 7:
       modeLSDJMidioutSetup();
       break;
   }

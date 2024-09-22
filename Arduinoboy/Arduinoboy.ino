@@ -76,7 +76,7 @@
  *                                                                         *
  ***************************************************************************/
 #define MEM_MAX 65
-#define NUMBER_OF_MODES 7    //Right now there are 7 modes, Might be more in the future
+#define NUMBER_OF_MODES 8    //Right now there are 8 modes, Might be more in the future
 
 //!!! do not edit these, they are the position in EEPROM memory that contain the value of each stored setting
 #define MEM_CHECK 0
@@ -420,6 +420,11 @@ uint8_t mapQueueWaitUsb = 5; //5ms - Needs to be longer because message packet i
 * mGB Settings
 ***************************************************************************/
 #define GB_MIDI_DELAY 500 //Microseconds to delay the sending of a byte to gb
+
+/***************************************************************************
+* Chord Settings
+***************************************************************************/
+#define CHORD_MIDI_DELAY 2500 //Microseconds to delay the sending of a byte to gb
 
 void setup() {
 /*
